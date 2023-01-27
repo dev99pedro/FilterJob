@@ -1,0 +1,19 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerCollum {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+@mixin backgroundLabel {
+    border-radius: 4px;
+    background-color: $white;
+}
+
+

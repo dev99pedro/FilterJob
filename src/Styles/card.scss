@@ -1,0 +1,11 @@
+@import '../Styles//mixin.scss';
+
+.card-container {
+    @include centerCollum;
+    align-items: center;
+    gap: 20px;
+ 
+   
+
+    
+}

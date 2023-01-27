@@ -1,0 +1,231 @@
+@import './variabels.scss';
+@import './mixin.scss';
+@import './mixinMedia.scss';
+
+.card-item-container {
+    @include center;
+    background-color: #ffffff;
+    border-radius: 6px;
+    width: 950px;
+    height: 17vh;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    -webkit-box-shadow: 1px 8px 24px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 8px 24px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 8px 24px -11px rgba(0, 0, 0, 0.75);
+
+    @include cellphone {
+        width: 310px;
+        height: 35vh;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+
+    }
+
+    @include tablet {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 500px;
+        height: 35vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+.card-item-left {
+    gap: 20px;
+    @include center();
+
+
+    .card-item-logo {
+        padding-left: 0;
+
+
+        @include cellphone {
+            position: relative;
+            bottom: 30px;
+            height: 45px;
+        }
+
+
+       
+
+        img {
+            @include cellphone {
+                padding: 0;
+                width: 70%;
+                padding-left: 0;
+
+
+            }
+        }
+
+
+    }
+
+    @include tablet {
+        flex-direction: column;
+        
+    }
+
+    @include cellphone {
+        flex-direction: column;
+        align-items: start;
+        gap: 0
+    }
+
+}
+
+
+.traço-cinza {
+    width: 250px;
+    height: 2px;
+    background-color: $gray;
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    @include cellphone {
+        display: block;
+    }
+}
+
+.card-item-info {
+    @include centerCollum;
+    align-items: flex-start;
+    gap: 5px;
+
+
+    @include tablet { 
+        margin-bottom: 20px;
+        align-items: center;
+        gap: 5px
+    }
+
+    .card-item-label {
+        @include center();
+        gap: 10px;
+
+        .card-item-label-name-company {
+            color: $blue;
+            font-size: $fontSize;
+
+            @include cellphone {
+                margin-right: 17px;
+            }
+        }
+
+        .card-item-label-new {
+            color: $white;
+            border-radius: 20px;
+            width: 55px;
+            padding: 3px;
+            background-color: $blue;
+            text-transform: uppercase;
+            font-size: $fontSize;
+            font-weight: 700;
+            @include center
+        }
+
+        .card-item-label-featured {
+            color: $white;
+            border-radius: 20px;
+            width: 90px;
+            padding: 3px;
+            background-color: $black;
+            text-transform: uppercase;
+            font-size: $fontSize;
+            font-weight: 700;
+
+            @include center
+        }
+    }
+
+
+    .card-item-text {
+        color: $black;
+        font-size: 20px;
+        font-weight: 700;
+
+        .card-item-text-position {
+            margin: 5px 0 5px 0;
+        }
+    }
+
+
+
+    .card-item-subtitle {
+        @include center();
+        gap: 20px;
+        color: $gray;
+
+        p {
+            font-weight: 700;
+            color: $gray
+        }
+    }
+
+
+    @include cellphone {
+        padding-left: 15px;
+        gap: 8px;
+    }
+}
+
+
+.card-item-right {
+
+    display: flex;
+    gap: 20px;
+
+    @include cellphone {
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+
+   
+
+    .card-item-right-level {
+        @include backgroundLabel;
+        padding: 4px 8px 4px 8px;
+
+        span {
+            color: $blue;
+            font-weight: 700;
+        }
+    }
+
+    .card-item-right-role {
+        @include backgroundLabel;
+        padding: 4px 8px 4px 8px;
+
+        span {
+            color: $blue;
+            font-weight: 700;
+        }
+    }
+
+
+    .card-item-right-label {
+        @include center;
+        gap: 20px;
+
+        .card-item-right-label-langtools {
+
+            span {
+                color: $blue;
+                font-weight: 700;
+                @include backgroundLabel;
+                padding: 5px 8px 5px 8px;
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,28 @@
+.input {
+  width: 950px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 7px;
+}
+
+.input:focus {
+  outline: 0;
+  font-size: 20px;
+}
+
+.input::-moz-placeholder {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.input:-ms-input-placeholder {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.input::placeholder {
+  font-size: 20px;
+  margin-left: 10px;
+}/*# sourceMappingURL=input.css.map */

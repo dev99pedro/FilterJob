@@ -1,0 +1,208 @@
+@charset "UTF-8";
+.card-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 6px;
+  width: 950px;
+  height: 17vh;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-shadow: 1px 8px 24px -11px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 600px) {
+  .card-item-container {
+    width: 310px;
+    height: 35vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1050px) {
+  .card-item-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 500px;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card-item-left {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-item-left .card-item-logo {
+  padding-left: 0;
+}
+@media (max-width: 600px) {
+  .card-item-left .card-item-logo {
+    position: relative;
+    bottom: 30px;
+    height: 45px;
+  }
+}
+@media (max-width: 600px) {
+  .card-item-left .card-item-logo img {
+    padding: 0;
+    width: 70%;
+    padding-left: 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 1050px) {
+  .card-item-left {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .card-item-left {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+}
+
+.traço-cinza {
+  width: 250px;
+  height: 2px;
+  background-color: hsl(180deg, 8%, 52%);
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .traço-cinza {
+    display: block;
+  }
+}
+
+.card-item-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+@media (min-width: 600px) and (max-width: 1050px) {
+  .card-item-info {
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 5px;
+  }
+}
+.card-item-info .card-item-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card-item-info .card-item-label .card-item-label-name-company {
+  color: hsl(180deg, 29%, 50%);
+  font-size: 15px;
+}
+@media (max-width: 600px) {
+  .card-item-info .card-item-label .card-item-label-name-company {
+    margin-right: 17px;
+  }
+}
+.card-item-info .card-item-label .card-item-label-new {
+  color: hsl(180deg, 52%, 96%);
+  border-radius: 20px;
+  width: 55px;
+  padding: 3px;
+  background-color: hsl(180deg, 29%, 50%);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-item-info .card-item-label .card-item-label-featured {
+  color: hsl(180deg, 52%, 96%);
+  border-radius: 20px;
+  width: 90px;
+  padding: 3px;
+  background-color: hsl(180deg, 14%, 20%);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-item-info .card-item-text {
+  color: hsl(180deg, 14%, 20%);
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-item-info .card-item-text .card-item-text-position {
+  margin: 5px 0 5px 0;
+}
+.card-item-info .card-item-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: hsl(180deg, 8%, 52%);
+}
+.card-item-info .card-item-subtitle p {
+  font-weight: 700;
+  color: hsl(180deg, 8%, 52%);
+}
+@media (max-width: 600px) {
+  .card-item-info {
+    padding-left: 15px;
+    gap: 8px;
+  }
+}
+
+.card-item-right {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  .card-item-right {
+    flex-wrap: wrap;
+    padding-left: 15px;
+  }
+}
+.card-item-right .card-item-right-level {
+  border-radius: 4px;
+  background-color: hsl(180deg, 52%, 96%);
+  padding: 4px 8px 4px 8px;
+}
+.card-item-right .card-item-right-level span {
+  color: hsl(180deg, 29%, 50%);
+  font-weight: 700;
+}
+.card-item-right .card-item-right-role {
+  border-radius: 4px;
+  background-color: hsl(180deg, 52%, 96%);
+  padding: 4px 8px 4px 8px;
+}
+.card-item-right .card-item-right-role span {
+  color: hsl(180deg, 29%, 50%);
+  font-weight: 700;
+}
+.card-item-right .card-item-right-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card-item-right .card-item-right-label .card-item-right-label-langtools span {
+  color: hsl(180deg, 29%, 50%);
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: hsl(180deg, 52%, 96%);
+  padding: 5px 8px 5px 8px;
+}/*# sourceMappingURL=cardItem.css.map */
